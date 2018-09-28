@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UserInfo} from '../../../../models/account.models';
 
 @Component({
   selector: 'app-memberbar',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./memberbar.component.scss']
 })
 export class MemberbarComponent implements OnInit {
-  user = null;
-  constructor() { }
+  user: UserInfo = null;
+  onLogin = false;
+  onRegister = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

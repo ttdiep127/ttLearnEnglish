@@ -1,39 +1,39 @@
 @import "../../../../../assets/variables";
 
 nav {
-  background: $dark-main-color;
-  clear: both;
-}
+       background: $dark-main-color;
+       clear: both;
+     }
 
-.mobile-menu {
-  background-color: $main-color;
-}
-
-.main-menu {
-  display: none;
-}
-
-li {
-  float: left;
-  position: relative;
-  list-style: none;
-
-  &:active {
-    background-color: $background-color;
-  }
-
-  a {
-    font-size: 14px;
-    color: black;
-    display: block;
-    &:hover {
-      text-decoration: none;
+    .mobile-menu {
+      background-color: $main-color;
     }
 
+    .main-menu {
+      display: none;
+    }
+
+    li {
+      float: left;
+      position: relative;
+      list-style: none;
+
+      &:active {
+        background-color: $background-color;
+      }
+
+      a {
+        font-size: 14px;
+        color: black;
+        display: block;
+        &:hover {
+          text-decoration: none;
+        }
+
   }
 }
 
-@media only screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .mobile-menu {
     display: none;
   }
@@ -66,16 +66,18 @@ li {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .mobile-menu {
     display: none;
   }
 
-  .main-menu {
-    height: 50px!important;
-    a {
-      text-transform: uppercase;
-      padding: 19px 39px 16px!important;
+  nav {
+    .main-menu {
+      height: 50px;
+      a {
+        text-transform: uppercase;
+        padding: 19px 39px 16px;
+      }
     }
   }
 }
